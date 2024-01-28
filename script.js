@@ -2,7 +2,6 @@
 const form = document.querySelector("form");
 const tableBody = document.querySelector("table tbody");
 
-
 function addRow(nome, telefone) {
   const newRow = tableBody.insertRow();
   const nomeCell = newRow.insertCell();
@@ -10,7 +9,6 @@ function addRow(nome, telefone) {
   nomeCell.textContent = nome;
   telefoneCell.textContent = telefone;
 }
-
 
 form.addEventListener("submit", (event) => {
   event.preventDefault(); 
